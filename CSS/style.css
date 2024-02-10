@@ -1,0 +1,432 @@
+body{
+     font-family: "DM Sans", sans-serif;
+      /* font-family: "Titan One", sans-serif; */
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    display: contents;
+    text-decoration: none;
+    /* color: #fff; */
+}
+.app-container{
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* header section */
+.header-container{
+    background-color: #ffb8ca;
+    padding: 0 1rem;
+    position: relative;
+    height: 664px;
+}
+.header-div {
+    padding-top: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-list{
+    display: flex;
+    gap: 1.5rem;
+}
+.header-item{
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+}
+.header-item a{
+    color: #fff;
+}
+.header-item a:hover,
+.header-item a:focus{
+    color: #D41443;
+}
+.header-btn{
+    color: #D41443;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 22px;
+    border: none;
+    width: 159px;
+    height: 44px;
+    background-color: #fff;
+}
+.btn-arrow{
+    font-size: 1.3em;
+    margin-left: 5px;
+}
+/* hero section */
+.hero-div{
+    margin-top: 2.7rem;
+    
+}
+.hero-title{
+    width: 250px;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fff;
+}
+.title-span{
+    font-family: "Titan One", sans-serif;
+    font-size: 58px;
+    line-height: 0.905;
+    color: #d41443;
+}
+.hero-link-list{
+    display: flex;
+    gap: 10px;
+}
+.hero-link-item{
+    border-radius: 20px;
+    width: 107px;
+    background: #d41443;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+.hero-link-item a{
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+}
+.hero-link-items{
+    border-radius: 20px;
+    width: 138px;
+    background: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+.hero-link-items a{
+    font-weight: 400;
+    font-size: 14px;
+    color: #d41443;
+}
+/* milk div */
+.milk-div{
+    width: 410px;
+    display: flex;
+    margin-top: 2.2rem;
+}
+.milk-descripsion{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: center;
+    justify-content: center;
+}
+.hero-prg{
+    width: 200px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #fff;
+}
+.milk-btn{
+    width: 26px;
+    height: 26px;
+    border: none;
+    background-color: #fff;
+    border-radius: 50%;
+    align-self: flex-start;
+}
+.fa-arrow-right{
+    font-size: xx-small;
+    color: #D41443;
+}
+/* hero pictures */
+.ice-cream{
+    position: absolute;
+    bottom: 0;
+    right: 23rem;
+    z-index: 1;
+}
+.circle-pink{
+    position: absolute;
+    top: 2.8rem;
+    right: 13rem;
+    z-index: 0;
+}
+.group-16{
+
+    position: absolute;
+    right: 1rem;
+    top: 8rem;
+}
+.group-23{
+    position: absolute;
+    right: 1rem;
+    top: 14rem;
+}
+.girl{
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+}
+/* first section */
+.first-section{
+    margin-top: 60px;
+    position: relative;
+}
+.products-cont{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.product-f-title{
+  margin: 0;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffa5ba;
+}
+.product-s-title{
+   margin: 0;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 58px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #d41443;
+}
+.product-list{
+    margin-top: 280px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+.ice-cream-item{
+  
+    border-radius: 24px;
+    max-width: 368px;
+    height: 535px;
+    background: #ffb8ca;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    margin-top: -50px;
+}
+.ice-coffee-item{
+     border-radius: 24px;
+    max-width: 368px;
+    height: 535px;
+    background: #f0d1a5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    margin-top: -50px;
+}
+.milkshake-item{
+     border-radius: 24px;
+    max-width: 368px;
+    height: 535px;
+    background: #c2e297;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    margin-top: -50px;
+}
+/* product img */
+.ice-cream-img{
+    position: absolute;
+    z-index: 2;
+    left: 4.5rem;
+    top: 8rem;
+}
+.ice-coffee-img{
+    position: absolute;
+    z-index: 2;
+    left: 28.7rem;
+    top: 8rem;
+}
+.milkshakes-img{
+    position: absolute;
+    z-index: 2;
+    right: 4rem;
+    top: 8rem;
+}
+/*  product list and description */
+.img-product-list{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-title{
+font-family: "Titan One", sans-serif;
+font-weight: 400;
+font-size: 30px;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+margin: 0 0 -20px 0;
+}
+.dots{
+    font-size: 4rem;
+    color: #fff;
+    margin: 0;
+}
+.products-prg{
+    
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    padding: 0 40px;
+}
+.fa-arrow-right{
+    font-size: medium;
+}
+.products-btn{
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+}
+/* second section */
+.about-container{
+    background: #fff5f6;
+    margin-top: 60px;
+}
+.about-f-title{
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffa5ba;
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 10px;
+}
+.about-s-title{
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 58px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #d41443;
+    text-align: center;
+    margin: 0;
+}
+.about-div{
+    background-image: url(/images/bgmilk.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 80px;
+}
+
+.about-s-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.about-f-prg{
+    width: 400px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+    color: #000;
+    text-align: start;
+}
+.about-s-prg{
+    width: 401px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.94;
+    letter-spacing: 0.04em;
+    color: #907e82;
+    text-align: start;
+}
+.about-btn{
+    color: #D41443;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 22px;
+    border: none;
+    width: 159px;
+    height: 44px;
+    background-color: #fff;
+}
+/* third-section */
+.icons-cont{
+     background: #fff5f6;
+     padding-top: 80px;
+     
+}
+.icons-list{
+    display: flex;
+    justify-content: flex-start;
+    gap: 8rem;
+    margin-left: 20px;
+}
+.icons-title{
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 58px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+    text-align: start;
+}
+.icons-prg{
+    width: 317px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.02em;
+    color: #000;
+}
+/* section four */
+.gallery{
+    column-count: 6;
+    gap: 10px;
+}
+.gallery-item{
+    break-inside: avoid;
+    margin-bottom: 10px;
+}
+

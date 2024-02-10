@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Titan+One&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./CSS/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -15,41 +20,48 @@
         <!-- header and hero of the page -->
         <header class="header-container">
 <div class="header-div">
+    <nav class="nav-container">
             <a href="./index.html">
-                <svg>
+                <svg width="199" height="50">
                     <use class="logo-icon" href="./Images/icons.svg#logo"></use>
                 </svg>
             </a>
 
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">How it's made?</a></li>
-                <li><a href="#">Our products</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="header-list">
+                <li class="header-item"><a href="#">Home</a></li>
+                <li class="header-item"><a href="#">About us</a></li>
+                <li class="header-item"><a href="#">How it's made?</a></li>
+                <li class="header-item"><a href="#">Our products</a></li>
+                <li class="header-item"><a href="#">Contact</a></li>
             </ul>
 
-            <button type="button">Buy now</button>
+            <button type="submit" class="header-btn">Buy now 
+               <span class="btn-arrow">&#8250;</span>
+            </button>
             </div>
 
             <div class="hero-div">
-                <h1>ice cream made with <span>passion</span></h1>
-                <ul>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">How it's made?</a></li>
+                <h1 class="hero-title">ice cream made with <span class="title-span">passion</span></h1>
+                <ul class="hero-link-list">
+                    <li class="hero-link-item"><a href="#">Products</a></li>
+                    <li class="hero-link-items"><a href="#">How it's made?</a></li>
                 </ul>
                 <div class="milk-div">
                 <img src="./Images/slider-pic1.png" alt="milk">
-                <p>Indulge in a scoop of ice cream made with passion and treat your taste buds to an unforgettable experience!</p>
-                <button>
+                <div class="milk-descripsion">
+                <p class="hero-prg">Indulge in a scoop of ice cream made with passion and treat your taste buds to an unforgettable experience!</p>
+                <button class="milk-btn">
                     <i class="fa fa-arrow-right"></i>
                 </button>
                 </div>
+                </nav>
+                </div>
                 <ul>
-                    <li> <img src="./Images/slider-pic2.png" alt="ice cream"></li>
-                    <li><img src="./Images/Group16.png" alt="number"></li>
-                    <li><img src="./Images/Group23.png" alt="number"></li>
-                    <li><img src="./Images/slider-pic3.png" alt="a girl"></li>
+                    <li> <img src="./Images/slider-pic2.png" alt="ice cream" class="ice-cream">
+                    <img src="./images/Ellipse3.png" alt="circle-pink" class="circle-pink"></li>
+                    <li><img src="./Images/Group16.png" alt="number" class="group-16"></li>
+                    <li><img src="./Images/Group23.png" alt="number" class="group-23"></li>
+                    <li><img src="./Images/slider-pic3.png" alt="a girl" class="girl"></li>
                 </ul>
             </div>
         </header>
@@ -57,80 +69,86 @@
        <!-- main of the page -->
         <main class="main-container">
             <section class="first-section">
-               
-                    <h3>100% natural </h3>
-                    <h2>products</h2>
-
-                    <ul>
-                        <li>
-                            <img src="./Images/home-pic1.png" alt="ice cream">
-                            <h3>ice cream</h3>
-                            <p>...</p>
-                            <p>Indulge in our rich and creamy ice cream, handcrafted with all-natural ingredients and available in a variety of flavors.</p>
-                            <button> <i class="fa fa-arrow-right"></i></button>
+              <div class="products-cont">
+                    <h3 class="product-f-title">100% natural </h3>
+                    <h2 class="product-s-title">products</h2>
+</div>
+                    <ul class="img-product-list">
+                        <li><img src="./Images/home-pic1.png" alt="ice cream" class="ice-cream-img"></li>
+                        <li> <img src="./Images/home-pic2.png" alt="ice coffee" class="ice-coffee-img"></li>
+                        <li><img src="./Images/home-pic3.png" alt="milkshakes" class="milkshakes-img"></li>
+                    </ul>
+                    <ul class="product-list">
+                        <li class="ice-cream-item">
+                            
+                            <h3 class="products-title">ice cream</h3>
+                            <p class="dots">...</p>
+                            <p class="products-prg">Indulge in our rich and creamy ice cream, handcrafted with all-natural ingredients and available in a variety of flavors.</p>
+                            <button class="products-btn"> <i class="fa fa-arrow-right"></i></button>
                         </li>
-                        <li>
-                            <img src="./Images/home-pic2.png" alt="ice coffee">
-                            <h3>ice coffee</h3>
-                            <p>...</p>
-                            <p>Refresh and energize with our perfectly brewed iced coffee, made with high-quality beans and served over ice.</p>
-                             <button> <i class="fa fa-arrow-right"></i></button>
+                        <li class="ice-coffee-item">
+                           
+                            <h3 class="products-title">ice coffee</h3>
+                            <p class="dots">...</p>
+                            <p class="products-prg">Refresh and energize with our perfectly brewed iced coffee, made with high-quality beans and served over ice.</p>
+                             <button class="products-btn"> <i class="fa fa-arrow-right"></i></button>
                         </li>
-                        <li>
-                            <img src="./Images/home-pic3.png" alt="milkshakes">
-                            <h3>milkshakes</h3>
-                            <p>...</p>
-                            <p>Satisfy your sweet tooth with our thick, made with premium ice cream, topped with whipped cream and your favorite toppings.</p>
-                             <button> <i class="fa fa-arrow-right"></i></button>
+                        <li class="milkshake-item">
+                            
+                            <h3 class="products-title">milkshakes</h3>
+                            <p class="dots">...</p>
+                            <p class="products-prg">Satisfy your sweet tooth with our thick, made with premium ice cream, topped with whipped cream and your favorite toppings.</p>
+                             <button class="products-btn"> <i class="fa fa-arrow-right"></i></button>
                         </li>
                     </ul>
             </section>
             <section class="second-section">
-                 
-                    <h3>tradition and love </h3>
-                    <h2>how it's made?</h2>
-<div>
+                 <div class="about-container">
+                    <h3 class="about-f-title">tradition and love </h3>
+                    <h2 class="about-s-title">how it's made?</h2>
+            <div class="about-div">
                     <img src="./Images/home-pic4.png" alt="a cow">
 
-                    <div>
+                    <div class="about-s-div">
                         <ul>
                             <li>
-                                <p>Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts. </p>
+                                <p class="about-f-prg">Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts. </p>
                             </li>
                             <li>
-                                <p>We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes. </p>
+                                <p class="about-s-prg">We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes. </p>
                             </li>
                         </ul>
-                        <button type="button">Read more 
-                           <span>&gt;</span>
+                        <button type="submit" class="about-btn">Read more 
+                           <span class="btn-arrow">&#8250;</span>
                         </button>
                     </div>
                 </div>
+                </div>
             </section>
             <section class="third-section">
-                <div>
-                    <ul>
+                <div class="icons-cont">
+                    <ul class="icons-list">
                         <li>
                             <img src="./Images/icon1.png" alt="milk">
-                            <h3>721</h3>
-                            <p>At 721 Cow, we're passionate about producing the highest quality ice cream possible.</p>
+                            <h3 class="icons-title">721</h3>
+                            <p class="icons-prg">At 721 Cow, we're passionate about producing the highest quality ice cream possible.</p>
                         </li>
                         <li>
                             <img src="./Images/icon2.png" alt="apples">
-                            <h3>16kg</h3>
-                            <p>You can be sure you're getting a scoop of the freshest ice cream around.</p>
+                            <h3 class="icons-title">16kg</h3>
+                            <p class="icons-prg">You can be sure you're getting a scoop of the freshest ice cream around.</p>
                         </li>
                         <li>
                             <img src="./Images/icon3.png" alt="heart">
-                            <h3>84</h3>
-                            <p>We use only the freshest, locally-sourced ingredients to make our 84 unique and delicious flavors.</p>
+                            <h3 class="icons-title">84</h3>
+                            <p class="icons-prg">We use only the freshest, locally-sourced ingredients to make our 84 unique and delicious flavors.</p>
                         </li>
                     </ul>
                 </div>
             </section>
             <section class="fourth-section">
-                <div class="fourth-div">
-                    <div><img src="./Images/home1.png" alt="photo"></div>
+                <div class="gallery">
+                    <div class="gallery-item-single"><img src="./Images/home1.png" alt="photo"></div>
                     <div>
                         <img src="./Images/home2.png" alt="photo">
                         <img src="./Images/home3.png" alt="photo">
@@ -139,6 +157,7 @@
                         <img src="./Images/home4.png" alt="photo">
                         <img src="./Images/home5.png" alt="photo">
                     </div>
+                    
                     <div>
                         <img src="./Images/home6.png" alt="photo">
                         <img src="./Images/home7.png" alt="photo">
@@ -147,7 +166,7 @@
                         <img src="./Images/home8.png" alt="photo">
                         <img src="./Images/home9.png" alt="photo">
                     </div>
-                    <div><img src="./Images/home10.png" alt="photo"></div>
+                    <div class="gallery-item-single"><img src="./Images/home10.png" alt="photo"></div>
                 </div>
             </section>
 
@@ -300,7 +319,7 @@
                 <p>Feel free to contact <span> <a href="tel:+610383766284">+61 (0) 383 766 284</a></span></p>
             </div>
         </footer>
-        © 2022 - IceCream. All Rights Reserved. 
+        <p>&copy; 2022 - IceCream. All Rights Reserved. </p>
     </div>
     <script src="./JS/mode.js"></script>
 </body>
