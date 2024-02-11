@@ -13,6 +13,7 @@ a{
     text-decoration: none;
     /* color: #fff; */
 }
+
 .app-container{
     width: 1280px;
     margin-left: auto;
@@ -50,6 +51,7 @@ a{
 .header-item a:hover,
 .header-item a:focus{
     color: #D41443;
+    
 }
 .header-btn{
     color: #D41443;
@@ -61,10 +63,19 @@ a{
     width: 159px;
     height: 44px;
     background-color: #fff;
+   
 }
+
+
 .btn-arrow{
     font-size: 1.3em;
     margin-left: 5px;
+}
+
+
+.header-btn:hover,
+.header-btn:focus{
+    transform: translateY(-5px);
 }
 /* hero section */
 .hero-div{
@@ -114,6 +125,15 @@ a{
     font-size: 14px;
     color: #d41443;
 }
+.hero-link-items:hover,
+.hero-link-items:focus{
+     transform: translateY(-5px);
+}
+.hero-link-item:hover,
+.hero-link-item:focus{
+     transform: translateY(-5px);
+     
+}
 /* milk div */
 .milk-div{
     width: 410px;
@@ -143,9 +163,18 @@ a{
     border-radius: 50%;
     align-self: flex-start;
 }
+.milk-btn:hover,
+.milk-btn:focus{
+    background-color: #d41443;
+}
 .fa-arrow-right{
     font-size: xx-small;
     color: #D41443;
+}
+.fa-arrow-right:hover,
+.fa-arrow-right:focus{
+    color: #fff;
+    rotate: 90deg;
 }
 /* hero pictures */
 .ice-cream{
@@ -230,6 +259,19 @@ a{
     padding-bottom: 50px;
     margin-top: -50px;
 }
+.ice-cream-item:hover,
+.ice-cream-item:focus{
+    background-color: #ecb5c2;
+   box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.3);
+}
+.ice-cream-item:hover .products-btn{
+    background: #D41443;
+    transform: scale(1.2);
+    border-radius: 15px;
+}
+.ice-cream-item:hover .fa-arrow-right{
+color: #fff;
+}
 .ice-coffee-item{
      border-radius: 24px;
     max-width: 368px;
@@ -242,6 +284,19 @@ a{
     padding-bottom: 50px;
     margin-top: -50px;
 }
+.ice-coffee-item:hover,
+.ice-coffee-item:focus{
+    background-color: #d9c19f;
+   box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.3);
+}
+.ice-coffee-item:hover .products-btn{
+    background: #D41443;
+    transform: scale(1.2);
+    border-radius: 15px;
+}
+.ice-coffee-item:hover .fa-arrow-right{
+color: #fff;
+}
 .milkshake-item{
      border-radius: 24px;
     max-width: 368px;
@@ -253,6 +308,19 @@ a{
     justify-content: flex-end;
     padding-bottom: 50px;
     margin-top: -50px;
+}
+.milkshake-item:hover,
+.milkshake-item:focus{
+    background-color: #bdd39f;
+   box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.3);
+}
+.milkshake-item:hover .products-btn{
+    background: #D41443;
+    transform: scale(1.2);
+    border-radius: 15px;
+}
+.milkshake-item:hover .fa-arrow-right{
+color: #fff;
 }
 /* product img */
 .ice-cream-img{
@@ -335,7 +403,11 @@ margin: 0 0 -20px 0;
     padding-top: 60px;
     margin-bottom: 10px;
 }
-.about-s-title{
+@keyframes tracking-in-contract-bck{
+    0%{letter-spacing:1em;transform:translateZ(400px);opacity:0}40%{opacity:.6}100%{transform:translateZ(0);opacity:1}}
+.tracking-in-contract-bck:hover{animation:tracking-in-contract-bck 2s ease-in-out backwards}
+
+    .about-s-title{
     font-family: "Titan One", sans-serif;
     font-weight: 400;
     font-size: 58px;
@@ -355,7 +427,8 @@ margin: 0 0 -20px 0;
     gap: 80px;
     margin-top: 80px;
 }
-
+@keyframes rotate-90-cw{0%{transform:rotate(0)}100%{transform:rotate(90deg)}}
+.rotate-90-cw:hover{animation:rotate-90-cw 3s ease-in-out both}
 .about-s-div{
     display: flex;
     flex-direction: column;
@@ -380,7 +453,12 @@ margin: 0 0 -20px 0;
     color: #907e82;
     text-align: start;
 }
-.about-btn{
+.prg-scale:hover,
+.prg-scale:focus {
+    transform: scale(1.1);
+}
+
+.about-btn {
     color: #D41443;
     font-weight: 700;
     font-size: 16px;
@@ -391,6 +469,10 @@ margin: 0 0 -20px 0;
     height: 44px;
     background-color: #fff;
 }
+.about-btn:hover,
+.about-btn:focus{
+    background-color: #e1e1e1;
+}
 /* third-section */
 .icons-cont{
      background: #fff5f6;
@@ -399,8 +481,8 @@ margin: 0 0 -20px 0;
 }
 .icons-list{
     display: flex;
-    justify-content: flex-start;
-    gap: 8rem;
+    justify-content: center;
+    gap: 4rem;
     margin-left: 20px;
     padding-bottom: 180px;
 }
@@ -421,6 +503,12 @@ margin: 0 0 -20px 0;
     letter-spacing: 0.02em;
     color: #000;
 }
+@keyframes rotate-center{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.rotate-center{animation:rotate-center 3s ease-in-out infinite backwards}
+
+@keyframes rotate-right{0%{transform:rotate(0);transform-origin:right}100%{transform:rotate(360deg);transform-origin:right}}
+.rotate-right:hover{animation:rotate-right 2s ease-in-out forwards}
+
 /* section four */
 
 .gallery-cont{
