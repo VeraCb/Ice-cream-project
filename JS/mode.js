@@ -1,7 +1,19 @@
-const element = document.querySelector(".rotate-right");
+function openModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "block";
+}
 
-element.addEventListener("mouseleave", () => {
-  setTimeout(() => {
-    element.classList.add("rotate-back");
-  }, 2000);
-});
+function closeModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}
+
+function openModalWindow() {
+  var modal = document.getElementById("myModalWindow");
+  modal.style.display = "block";
+}
+
+function closeModalWindow() {
+  var modal = document.getElementById("myModalWindow");
+  modal.style.display = "none";
+}

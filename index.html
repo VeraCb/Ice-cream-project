@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Ice Cream</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./CSS/swiper-bundle.min.css"/>
 </head>
 <body>
     <!-- app container -->
@@ -35,11 +37,62 @@
                 <li class="header-item"><a href="#">Contact</a></li>
             </ul>
 
-            <button type="submit" class="header-btn">Buy now 
+            <button  type="button" class="header-btn" onclick="openModal()">Buy now 
                <span class="btn-arrow">&#8250;</span>
             </button>
             </div>
-
+<!-- modal window buy now -->
+<div id="myModal" class="modal-cont is-hidden" >  
+    <button type="button"   class="modal-btn" >
+         <span onclick="closeModal()" class="close">&#10006;</span> 
+        </button>
+ 
+  <h2 class="modal-title"> Super puper Ice Cream</h2>
+<ul class="modal-list">
+    <li class="modal-item">
+        <img src="./images/home-pic1.png" alt="ice cream" class="modal-img">
+        <input type="text" placeholder="how many?" class="modal-inp">
+    </li>
+    <li class="modal-item">
+         <img src="./images/home-pic2.png" alt="ice cream" class="modal-img">
+        <input type="text" placeholder="how many?" class="modal-inp">
+    </li>
+    <li class="modal-item">
+         <img src="./images/home-pic3.png" alt="ice cream" class="modal-img">
+        <input type="text" placeholder="how many?" class="modal-inp">
+    </li>
+</ul>
+<form  class="modal-form">
+    <ul class="form-list">
+        <li class="form-item">
+    <label for="name"  class="form-lbl"
+    >Name</label>
+    <input type="text" id="name" class="form-inp">
+    </li>
+     <li class="form-item">
+    <label for="phone"  class="form-lbl"
+    >Phone</label>
+    <input type="text" id="phone" class="form-inp">
+    </li>
+     <li class="form-item">
+    <label for="mail"  class="form-lbl"
+    >Mail</label>
+    <input type="text" id="mail" class="form-inp">
+    </li>
+     <li class="form-item-c">
+    <!-- <input type="text"  class="form-comm" placeholder="write something and maybe we read this "> -->
+     <textarea
+                name="user-comment"
+                id="user-comment"
+                placeholder="write something and&#10;maybe we read this"
+                class="form-comm"
+              ></textarea>
+     <button type="submit" class="fomr-btn">I want that!</button>
+    </li>
+    </ul>
+   
+</form>
+</div>
             <div class="hero-div">
                 <h1 class="hero-title">ice cream made with <span class="title-span">passion</span></h1>
                 <ul class="hero-link-list">
@@ -171,16 +224,23 @@
             </section>
 
             <section class="fifth-section">
-                <div class="review-cont">
-                    <img src="./images/portret1.png" alt="girl">
-                    <p class="review-prg">
-                      <img src="./images/“.png" alt="#">
-                        I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In addition, you have beautiful serving, cozy atmosphere and polite staff.
-                    </p>
-                    <p class="p-dots">. . .</p>
-                    <h5 class="name-prg">Emily, Los Angeles</h5>
-                   
+                <div class=" testimonial mySwiper">
+                    <div class=" testi-content swiper-wrapper"> 
+                        <div class="slide swiper-slide">
+                            <img src="./images/portret1.png" alt="girl">
+                            <p class="review-prg">
+                                <img src="./images/“.png" alt="#">
+                            
+                                I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In addition, you have beautiful serving, cozy atmosphere and polite staff.
+                            </p>
+                            <p class="p-dots">. . .</p>
+                            <div class="details">
+                                <span class="name">Emily</span>
+                                <span class="country">Los Angeles</span>
+                            </div>
+                        </div>
                 </div>
+               
             </section>
             <section class="sixth-section">
                 <div class="contacts-cont">
@@ -287,11 +347,39 @@
                         <button type="submit" class="location-btn">Our Locations 
                             <span class="btn-arrow">&#8250;</span>
                         </button>
-                        <button type="submit" class="franchise-btn">Franchise
+                        <button type="submit" class="franchise-btn" onclick="openModalWindow()">Franchise
                              <span class="btn-arrow">&#8250;</span>
                         </button>
                     </div>
-                
+                <div id="myModalWindow" class="modal-window" >  
+    <button type="button" >
+         <span onclick="closeModalWindow()" >&#10006;</span> 
+        </button>
+        <div class="franc-details">
+            <h3 class="franc-title">Leave your details and maybe we will call you back</h3>
+            <form >
+                <ul class="franc-list">
+                    <li class="franc-item">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="franc-inp">
+                    </li>
+                    <li class="franc-item">
+                        <label for="number">Number</label>
+                        <input type="text" id="number" class="franc-inp">
+                    </li>
+                    <li class="franc-item">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" class="franc-inp">
+                    </li>
+                    <li class="franc-item">
+                        <label for="comment">A few words, my darling</label>
+                        <input type="text" id="comment" placeholder="Write here.." class="franc-comm">
+                    </li>
+                </ul>
+            </form>
+            <button type="button" class="franc-btn">Send</button>
+        </div>
+        </div>
             </section>
          
         </main>
@@ -315,7 +403,7 @@
                         </svg>
                     </li>
                     <li>
-                        <svg width="20" height="20" class="fb-svg">
+                        <svg width="35" height="35" class="fb-svg">
                             <use href="./images/icons.svg#icon-facebook"></use>
                         </svg>
                     </li>
@@ -327,6 +415,8 @@
         </footer>
         
     </div>
+    <!-- swiper js -->
+    <script src="./JS/swiper-bundle.min.js"></script>
     <script src="./JS/mode.js"></script>
 </body>
 </html>
