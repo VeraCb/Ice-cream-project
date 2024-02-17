@@ -1063,3 +1063,119 @@ color: #907e82;
     transition: all 0.2s ease-in-out;
     transform: scale(1.2);
 }
+/* hamburger menu */
+.menu-button{
+    display: none;
+}
+.hamburger-cont{
+    /* width: 30vh;
+    height: 40vh;
+    z-index: 2; */
+    display: none;
+}
+
+.menu-button{
+    background-color: transparent;
+    border: none;
+}
+.fa-bars{
+    font-weight: 900;
+    font-size: 26px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+/* responcive */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .header-container{
+        max-width: 480px;
+        /* padding: 0 0 0 1rem; */
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+    }
+    .header-div{
+        display: flex;
+        width: 390px;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin-left: 1rem;
+
+    }
+    .header-list{
+        display: none;
+    }
+    .header-btn{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+        position: relative;
+       
+
+    }
+    .fa-bars{
+        font-weight: 600;
+        font-size: 26px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        color: #d41342;
+    }
+    .hamburger-cont{
+        position: fixed;
+        background-color: #d07389;
+        z-index: 3;
+    
+    }
+    .ice-cream{
+       position: absolute;
+        z-index: 1;
+        right: 60px;
+
+    }
+/* dispaly none */
+    .girl{
+        display: none;
+    }
+    .group-16{
+        display: none;
+    }
+    .group-23{
+        display: none;
+    }
+     .milk-div img{
+        display: none;
+    }
+    .milk-descripsion{
+        display: none;
+    }
+    .circle-pink{
+        position: absolute;
+        z-index: 0;
+        top: 50px;
+        right: -100px;
+        overflow: hidden;
+    }
+   
+   .hero-title{
+    position: absolute;
+    z-index: 2;
+    top: 240px;
+    left: 40px;
+   }
+    .hero-link-list{
+        position: absolute;
+        z-index: 2;
+        left: 40px;
+        bottom: 220px;
+    }
+    /* first section */
+   .first-section{
+     max-width: 480px;
+   }
+   .product-list{
+    display: flex;
+    flex-direction: column;
+   }
+}
